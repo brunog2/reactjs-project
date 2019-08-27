@@ -1,0 +1,86 @@
+.products-list{
+    max-width: 800px;
+    margin: 20px auto 0;
+    padding: 0 20px;
+}
+
+.products-list article{
+    
+    background: rgb(32, 25, 37);
+    color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.products-list article p{
+    font-size: 16px;
+    line-height: 24px;
+    color: rgb(201, 201, 201);
+    margin-top: 5px;
+}
+
+.products-list article a{
+    border: solid 2px rgba(110, 79, 160);
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 42px;
+    transition: 300ms;
+}
+
+.products-list article a:hover{
+    transition: 300ms;    
+    background: rgba(110, 79, 160);
+    color: white;
+}
+
+.products-list article a:active{
+    background: rgb(81, 45, 138);
+    color: white;
+    border-color: rgb(81, 45, 138);
+}
+
+.products-list .actions{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2px;
+    padding-bottom: 10px;
+    
+}
+
+.products-list .actions button{
+    transition: 300ms;
+    border: solid 2px rgba(110, 79, 160);
+    color: #fff;    
+    margin: 5px;
+    background-color: rgba(110, 79, 160);
+    width: 150px;
+    height: 35px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px; 
+    cursor: pointer;
+}
+
+.products-list .actions button:hover{
+    transition: 300ms;    
+    background: rgb(32, 25, 37);
+    color: rgb(255, 255, 255);
+}
+
+.products-list .actions button:disabled{
+    opacity: 0.5;
+    cursor: default;
+}
+
+.products-list .actions button:disabled:hover{
+    opacity: 0.5;
+    cursor: default;
+    background-color: rgba(110, 79, 160);
+    color: white;
+}
